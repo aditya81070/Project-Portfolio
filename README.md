@@ -1,2 +1,3 @@
 # Project-Portfolio
-This is first project of Udacity Front-end Nanodegree
+> This is first project of front-end nanodegree.
+
