@@ -1,0 +1,128 @@
+
+.header-menu {
+  display: none;
+}
+
+@media screen and (max-width:513px){
+  .logo{
+    float: none;
+    height: 72px;
+    width: auto;
+    margin-right: 1em;
+  }
+  .header-title{
+    float: none;
+    display: inline-block;
+    margin: 10px;
+    font-size: 1em;
+  }
+
+  .nav{
+    z-index: 15;
+    width: 300px;
+    position: absolute;
+    transform: translate(-300px,0);
+    transition: transform 0.3s ease;
+  }
+
+  .nav.open {
+    transform: translate(0,0);
+  }
+
+  .menu {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+    color: black;
+  }
+
+  .nav a:hover{
+    background-color: rgb(62, 88, 182);
+  }
+  .header-menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+
+  .header-menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .logo{
+    float: none;
+    height: 80px;
+    width: auto;
+    margin-right: 1em;
+  }
+  .header-title{
+    float: none;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .about h2{
+    font-size: 2em;
+    padding: 5px;
+  }
+
+  .about-me {
+    padding: 5px;
+    text-align: justify;
+    line-height: 1em;
+  }
+
+  .about-me p{
+    margin: 10px;;
+  }
+}
+
+@media screen and (min-width:601px) {
+  .about h2{
+    font-size: 2em;
+    padding: 5px;
+  }
+
+  .about-me {
+    padding: 5px;
+    text-align: justify;
+    line-height: 1em;
+  }
+
+  .about-me p{
+    margin: 10px;;
+  }
+  .project{
+    width: 48%;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:1100px) {
+  .project {
+    width: 31%;
+  }
+  .project-title {
+    font-size: 1.5em;
+  }
+  .about-me p {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (min-width:1320px) {
+  .project{
+    width: 23%;
+  }
+  .project-title {
+    font-size: 1.3em;
+  }
+}

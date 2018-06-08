@@ -1,8 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head>
-<title>Aditya Agarwal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Aditya Agarwal</title>
 </head>
+
 <body>
-<h1> Aditya Agarwal</h1>
+  <header class="header">
+    <div class="header-inner">
+      <img src="./img/udacity.png" alt="Logo" class="logo">
+      <div class="header-title">
+        <h1 class="name">Aditya Agarwal</h1>
+        <h3 class="title">Front End Developer</h3>
+      </div>
+      <a id="menu" class="header-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+      </a>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <ul class="menus">
+      <li class="menu"><a href="#about">About</a></li>
+      <li class="menu"><a href="">Skills</a></li>
+      <li class="menu"><a href="#projects">Projects</a></li>
+      <li class="menu"><a href="">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="main-section">
+     <section id="coding-section">
+        <div class="coding-block">
+          <picture>
+            <source srcset="./img/background-1280*900.jpg" media="(max-width:1300px)">
+            <source srcset="./img/background-720*1280.jpg" media="(max-width:700px)">
+            <source srcset="./img/background-360*640.jpg" media="(max-width:360px)">
+
+            <img class="coding" src="./img/background 1920.jpg" alt="">
+          </picture>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About</h2>
+        <article class="about-me">
+          <p>I am Aditya Agarwal, pursuing my bachlor's degree in computer science from JECRC College, Jaipur. I am coding from almost one year. I currently work on HTML/CSS and Python and javascript being next. I am learning machine learning and basic concepts
+            of datascience. Artificical Intelligence facinates me and I want to work in this field in future. I love Google because of its advanced products</p>
+        </article>
+      </section>
+
+      <section id="projects" class="projects">
+        <h1 class="featured-work">Featured Work</h1>
+        <div class="container-flex">
+          <div class="project">
+            <h1 class="project-title">Jecrc Mun 2018</h1>
+            <img src="./img/mun.jpg" alt="JERCR MUN" class="project-img">
+            <h2 class="description">Description</h2>
+            <p class="project-discription">JECRC MUN 2018 is a model united nation held by JECRC.</p>
+            <a class="project-link" href="https://github.com/jecrcmun/jecrcmun.github.io">Check it here!</a>
+          </div>
+
+          <div class="project">
+            <h1 class="project-title">Animal Tranding Card</h1>
+            <img src="./img/animaltradingcard.jpg" alt="JERCR MUN" class="project-img">
+            <h2 class="description">Description</h2>
+            <p class="project-discription">Animal Tranding Card is made in Google challenge scholarship.</p>
+            <a class="project-link" href="https://codepen.io/adityaagarwal/pen/padOKK">Check it here!</a>
+          </div>
+
+          <div class="project">
+            <h1 class="project-title">Pixel Art Maker</h1>
+            <img src="./img/pixelartmaker.jpg" alt="JERCR MUN" class="project-img">
+            <h2 class="description">Description</h2>
+            <p class="project-discription">Pixel art maker is art game in which user create a grid of his desire <br>and color it with multiple colors.</p>
+            <a class="project-link" href="https://codepen.io/adityaagarwal/full/GQeGem">Check it here!</a>
+          </div>
+
+          <div class="project">
+            <h1 class="project-title">Public Addressing System</h1>
+            <img src="./img/pas.jpg" alt="JERCR MUN" class="project-img">
+            <h2 class="description">Description</h2>
+            <p class="project-discription">This is a hackathon project by team codecore. It is solution of problem that are faced by passengers
+              <br/> due to inappropriate announcing system at railway stations.</p>
+            <a class="project-link" href="https://codecore.000webhost.com">Check it here!</a>
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- TODO: skills and contact is remaining -->
+  <script>
+    /*
+     * Open the drawer when the menu ison is clicked.
+     */
+    var menu = document.querySelector('#menu');
+    var main = document.querySelector('main');
+    var drawer = document.querySelector('.nav');
+
+    menu.addEventListener('click', function(e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function() {
+      drawer.classList.remove('open');
+    });
+  </script>
 </body>
+
 </html>
