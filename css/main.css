@@ -65,8 +65,8 @@ header, nav, footer, section, article, div {
 }
 
 .nav {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -135,7 +135,7 @@ header, nav, footer, section, article, div {
 
 .projects {
   background: #190061;
-  color: red;
+  color: #66FCF1;
 }
 
 .container-flex {
