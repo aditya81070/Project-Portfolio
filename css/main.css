@@ -1,18 +1,27 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
-header, nav, footer, section, article, div {
+header,
+nav,
+footer,
+section,
+article,
+div {
   box-sizing: border-box;
 }
-
 
 .main-section {
   box-sizing: border-box;
@@ -29,25 +38,20 @@ header, nav, footer, section, article, div {
   background-color: #0C0032;
   color: white;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .logo {
-  float: left;
   height: 100px;
 }
 
 .header-title {
-  float: right;
   margin-top: 15px;
   padding: 10px 5px;
   margin-right: 10px;
   font-size: 1.4em;
-}
-
-.header-inner::after {
-  clear: both;
-  display: block;
-  content: "";
 }
 
 .name {
@@ -65,8 +69,6 @@ header, nav, footer, section, article, div {
 }
 
 .nav {
-  /* position: sticky;
-  top: 0; */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -205,4 +207,55 @@ header, nav, footer, section, article, div {
 .coding {
   width: 100%;
   max-height: 700px;
+}
+
+.footer-container {
+  box-sizing: border-box;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: #1A1A1D;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: white;
+}
+
+.fa-facebook:hover {
+  background: blue;
+  color: white;
+  transition: background .8s;
+}
+
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+  transition: background .8s;
+}
+
+.fa-linkedin:hover {
+  background: #007bb5;
+  color: white;
+  transition: background .8s;
+}
+
+.fa-github:hover {
+  background: #333;
+  color: white;
+  transition: background .8s;
+}
+
+.fa-envelope:hover {
+  background: #b71610;
+  color: white;
+  transition: background .8s;
 }
