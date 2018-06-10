@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open Sans Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="icon" href="./img/favicon-256.png" type="image/png" sizes="16x16">
   <title>Aditya Agarwal</title>
@@ -16,16 +18,21 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <img src="./img/udacity.png" alt="Logo" class="logo">
+      <div class="header-logo">
+        <img src="./img/udacity.png" alt="Logo" class="logo">
+      </div>
       <div class="header-title">
         <h1 class="name">Aditya Agarwal</h1>
         <h3 class="title">Front End Developer</h3>
       </div>
-      <a id="menu" class="header-menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
-      </a>
+      <div class="header-menu">
+        <a id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+             <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+        </a>
+      </div>
+
     </div>
   </header>
 
@@ -34,7 +41,7 @@
       <li class="menu"><a href="#about">About</a></li>
       <li class="menu"><a href="">Skills</a></li>
       <li class="menu"><a href="#projects">Projects</a></li>
-      <li class="menu"><a href="">Contact</a></li>
+      <li class="menu"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -55,7 +62,7 @@
       <section id="about" class="about">
         <h2>About</h2>
         <article class="about-me">
-          <p>I am Aditya Agarwal, pursuing my bachlor's degree in computer science from JECRC College, Jaipur. I am coding from almost one year. I currently work on HTML/CSS and Python and javascript being next. I am learning machine learning and basic concepts
+          <p>I am Aditya Agarwal, pursuing my bachelor's degree in computer science from JECRC College, Jaipur. I am currently working  on HTML/CSS, Python and  Javascript being next. I am learning machine learning and basic concepts
             of datascience. Artificical Intelligence facinates me and I want to work in this field in future. I love Google because of its advanced products</p>
         </article>
       </section>
@@ -101,7 +108,19 @@
     </section>
   </main>
 
-  <!-- TODO: skills and contact is remaining -->
+  <!-- TODO: skills is remaining -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="social">
+        <a href="https://www.facebook.com/aditya39ps" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+        <a href="https://twitter.com/aditya39ps" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/aditya81070/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+        <a href="https://github.com/aditya81070" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+        <a href="mailto:aditya81070@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+      </div>
+    </div>
+  </footer>
+
   <script>
     /*
      * Open the drawer when the menu ison is clicked.
