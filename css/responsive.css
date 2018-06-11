@@ -45,7 +45,7 @@
     background-color: rgb(62, 88, 182);
   }
   .header-menu {
-    display: block;
+    display: inline-flex;
     padding: 1em;
   }
   .header-menu svg {
@@ -113,12 +113,21 @@
   }
 }
 
-@media screen and (max-width:540px) {  
+@media screen and (max-width:540px) {
   .fa {
     padding: 12px;
-    font-size: 30px;
-    width: 30px;
+    font-size: 25px;
+    width: 25px;
     background-color: #1a1a1d;
     color: white;
   }
+
+.fa:hover {
+  background: none;
+  color: none;
+  transform: none;
+}
+
+  }
+
 }

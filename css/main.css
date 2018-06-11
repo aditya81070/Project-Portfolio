@@ -43,8 +43,12 @@ div {
   justify-content: space-between;
 }
 
+.header-logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .logo {
-  height: 100px;
+  height: 80px;
 }
 
 .header-title {
@@ -228,34 +232,35 @@ div {
   margin: 5px 2px;
   border-radius: 50%;
   background: white;
+  transition: background .2s ease-out,transform .3s ;
 }
 
 .fa-facebook:hover {
   background: blue;
   color: white;
-  transition: background .8s;
+  transform: rotate(360deg);
 }
 
 .fa-twitter:hover {
   background: #55ACEE;
   color: white;
-  transition: background .8s;
+  transform: rotate(360deg);
 }
 
 .fa-linkedin:hover {
   background: #007bb5;
   color: white;
-  transition: background .8s;
+  transform: rotate(360deg);
 }
 
 .fa-github:hover {
   background: #333;
   color: white;
-  transition: background .8s;
+  transform: rotate(360deg);
 }
 
 .fa-envelope:hover {
   background: #b71610;
   color: white;
-  transition: background .8s;
+  transform: rotate(360deg);
 }
