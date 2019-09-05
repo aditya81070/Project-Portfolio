@@ -1,4 +1,4 @@
-const staticChacheName = 'portfolio-v3'
+const staticChacheName = 'portfolio-v4'
 const imgCache = 'portfolio-content-imgs'
 const allCaches = [
   staticChacheName,
@@ -10,10 +10,10 @@ self.addEventListener('install', (event) => {
     caches.open(staticChacheName).then(cache => {
       return cache.addAll([
         '/',
-        '/css/main.css',
-        '/css/responsive.css',
-        '/js/indexController.js',
-        '/img/favicon .ico',
+        'css/main.css',
+        'css/responsive.css',
+        'js/indexController.js',
+        'img/favicon .ico',
         'https://fonts.googleapis.com/css?family=Roboto',
         'https://fonts.googleapis.com/css?family=Open Sans Condensed:300',
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
@@ -24,8 +24,7 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const requestUrl = new URL(event.request.url)
-
-  if (requestUrl.pathname.includes('/img/')) {
+  if (requestUrl.pathname.startsWith('/img/')) {
     event.respondWith(servePhotos(event.request))
     return
   }
