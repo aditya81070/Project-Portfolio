@@ -15,8 +15,19 @@ self.addEventListener('install', (event) => {
         'js/indexController.js',
         'img/favicon .ico',
         'https://fonts.googleapis.com/css?family=Roboto',
-        'https://fonts.googleapis.com/css?family=Open Sans Condensed:300',
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
+      ])
+    })
+  )
+  event.waitUntil(
+    caches.open(imgCache).then(cache => {
+      return cache.addAll([
+        'img/animaltradingcard.jpg',
+        'img/mun.jpg',
+        'img/mun.png',
+        'img/pas.jpg',
+        'img/pixelartmaker.jpg',
+        'img/udacity.png'
       ])
     })
   )
