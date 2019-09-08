@@ -1,6 +1,7 @@
 {
-  "short_name": "My Web",
-  "name": "Aditya Agarwal",
+  "version": "1.0.0",
+  "short_name": "Aditya Web",
+  "name": "Aditya Agarwal's Website",
   "icons": [
     {
       "src": "/img/icons-192.png",

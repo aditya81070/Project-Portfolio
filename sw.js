@@ -1,4 +1,4 @@
-const staticChacheName = 'portfolio-v6'
+const staticChacheName = 'portfolio-v7'
 const imgCache = 'portfolio-content-imgs'
 const allCaches = [
   staticChacheName,
