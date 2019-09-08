@@ -1,4 +1,4 @@
-const staticChacheName = 'portfolio-v4'
+const staticChacheName = 'portfolio-v5'
 const imgCache = 'portfolio-content-imgs'
 const allCaches = [
   staticChacheName,
@@ -13,7 +13,10 @@ self.addEventListener('install', (event) => {
         'css/main.css',
         'css/responsive.css',
         'js/indexController.js',
+        'js/manifest.json',
         'img/favicon .ico',
+        'img/icons-192.png',
+        'img/icons-512.png',
         'https://fonts.googleapis.com/css?family=Roboto',
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
       ])
